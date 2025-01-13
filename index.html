@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Тестовое React Песляк Ирина</title>
+  </head>
+  <body>
+    <main class="task">
+      <h1 class="task__title">n-е число в последовательности Фибоначчи</h1>
+      <section class="task__condition">
+        <h2 class="condition">Условие</h2>
+        <p class="condition_paragraph">
+          Напиши функцию, которая при заданном числе n (n &#8805; 1) возвращает
+          n-е число в последовательности Фибоначчи.
+        </p>
+        <p class="condition_paragraph">Например: nthFibo(4) вернёт 2</p>
+        <p class="condition_paragraph">
+          Потому что 2 - это 4-е число в последовательности Фибоначчи. Для
+          справки, первые два числа в последовательности Фибоначчи - 0 и 1, и
+          каждое последующее число является суммой двух предыдущих.
+        </p>
+      </section>
+      <section class="task__solution">
+        <form name="form" class="form">
+          <label class="form__label" for="number">Введите номер (n)</label>
+          <input
+            name="inputNumber"
+            id="number"
+            type="number"
+            class="form__input"
+            min="1"
+          />
+        </form>
+        <div class="solution">
+          <h2 class="solution__title">Ответ</h2>
+          <div class="solution__box">
+            <div class="solution__item">
+              <div class="solution__subtitle">Первый способ</div>
+              <div class="solution__text" id="solutionOne"></div>
+            </div>
+            <div class="solution__item">
+              <div class="solution__subtitle">Второй способ</div>
+              <div class="solution__text" id="solutionTwo"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
